@@ -1,0 +1,30 @@
+$hero-color-overlay: #000 !default
+$hero-color-opacity: .4 !default
+
+$hero-overlay: rgba($hero-color-overlay, $hero-color-opacity) !default
+
+$hero-color-text: #fff !default
+.superhero
+  background: url('../img/hero-bg.jpg') center
+  background-size: cover
+  position: relative
+  display: flex
+  color: #fff
+  z-index: 2
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: $hero-overlay
+    z-index: 1
+
+@for $i from 1 to 20
+  $height: $i*5
+  .sh-height-#{$height}
+    height: #{$height}vh
+
+.superhero>*
+  margin: auto

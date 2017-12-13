@@ -1,0 +1,78 @@
+.superhero {
+  background: url("../img/hero-bg.jpg") center;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  z-index: 2; }
+  .superhero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1; }
+
+.sh-height-5 {
+  height: 5vh; }
+
+.sh-height-10 {
+  height: 10vh; }
+
+.sh-height-15 {
+  height: 15vh; }
+
+.sh-height-20 {
+  height: 20vh; }
+
+.sh-height-25 {
+  height: 25vh; }
+
+.sh-height-30 {
+  height: 30vh; }
+
+.sh-height-35 {
+  height: 35vh; }
+
+.sh-height-40 {
+  height: 40vh; }
+
+.sh-height-45 {
+  height: 45vh; }
+
+.sh-height-50 {
+  height: 50vh; }
+
+.sh-height-55 {
+  height: 55vh; }
+
+.sh-height-60 {
+  height: 60vh; }
+
+.sh-height-65 {
+  height: 65vh; }
+
+.sh-height-70 {
+  height: 70vh; }
+
+.sh-height-75 {
+  height: 75vh; }
+
+.sh-height-80 {
+  height: 80vh; }
+
+.sh-height-85 {
+  height: 85vh; }
+
+.sh-height-90 {
+  height: 90vh; }
+
+.sh-height-95 {
+  height: 95vh; }
+
+.superhero > * {
+  margin: auto; }
