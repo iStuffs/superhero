@@ -1,0 +1,90 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="superhero-a-jquery-plugin">Superhero - a jQuery plugin</h1>
+<p><img src="img/superhero.jpg" alt="Super hero rules"></p>
+<blockquote>
+<p>Yeh! You just a click to be grant super powers</p>
+</blockquote>
+<h2 id="i-love-superpower-but-what-can-i-do-now-">I love superpower but what can I do now ?</h2>
+<p>You love big, flat hero image header in your face? Here is is the easiest way to do so.</p>
+<hr>
+<h2 id="what-you-need">What you need</h2>
+<p>You need to link jquery and the superhero plugin file to your html document. Here&#39;s how</p>
+<ul>
+<li>In your <strong>head</strong> tag link the <strong>super hero stylesheet</strong> <em>(Do you feel the power flow ?)</em><pre><code class="lang-html">&lt;head&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/superhero.css&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+</li>
+<li>At the bottom of your <strong>body</strong> add <strong>jQuery</strong> and the <strong>super hero script</strong><pre><code class="lang-html">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.superhero.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/script.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+</li>
+</ul>
+<h2 id="configuration">Configuration</h2>
+<h4 id="convention-over-configuration">Convention over Configuration</h4>
+<p>The default selector for this heroic section is <code>`
+if you need to change it go the</code>jquery.superhero.js`</p>
+<pre><code class="lang-javascript">  var selector = &#39;.myAwsomeCssClass&#39;;
+</code></pre>
+<h3 id="data-your-html-pimped-super-belt">Data your html pimped super belt</h3>
+<p>On your hero section tag add one of this attribute</p>
+<table>
+<thead>
+<tr>
+<th>Attributes</th>
+<th>Description</th>
+<th>Defalt value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-img-path</td>
+<td>path to your image</td>
+<td>img/hero-bg.jpg</td>
+</tr>
+<tr>
+<td>data-bg-color</td>
+<td>the overlay background color</td>
+<td>#000</td>
+</tr>
+<tr>
+<td>data-bg-opacity</td>
+<td>the overlay opacity</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>data-gradient-start</td>
+<td>the gradient overlay start color</td>
+<td>default is data-bg-color</td>
+</tr>
+<tr>
+<td>data-gradient-stop</td>
+<td>the gradient overlay end color</td>
+<td>default is data-bg-color</td>
+</tr>
+<tr>
+<td>data-gradient-direction</td>
+<td>the gradient overlay&#39;s direction</td>
+<td>to right</td>
+</tr>
+</tbody>
+</table>
+<p>You should not mix <code>data-bg-color</code> with <code>data-gradient-xxx</code> <em>(data-gradient-start/data-gradient-stop/data-gradient-direction)</em></p>
+<blockquote>
+<p>exemple</p>
+</blockquote>
+<pre><code class="lang-html">&lt;header class=&quot;superhero sh-height-65 sh-center&quot; data-img-path=&quot;/img/superhero.jpg&quot;  data-bg-opacity=&quot;0.5&quot; data-gradient-start=&quot;#fff&quot; data-gradient-stop=&quot;#000&quot; data-gradient-direction=&quot;to bottom&quot;&gt;
+  &lt;div class=&quot;headings&quot;&gt;
+    &lt;h1&gt;Hello, I&#39;ve got super powers and you...?&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</code></pre>
+
+      </body>
+    </html>
